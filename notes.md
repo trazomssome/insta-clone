@@ -20,10 +20,6 @@
 
 1. 최신 javascript 사용을 위해 babel 설치
 
-## 3.3 POC API
-
-1. Proof of Concept용 영화 API 만들어보기
-
 ## 3.4 Prisma Setup
 
 1. Prisma는 ORM(Object Relational Mapper) 객체와 관계형 데이터베이스의 데이터를 자동으로 매핑해주는 것)
@@ -35,6 +31,18 @@
 2. client는 데이터베이스와 어떻게 소통하는지에 대한 설정
 3. migration 할때 윈도우 환경의 경우 .env의 database_url 입력 시 비밀번호까지 입력해줘야함
 
-## 3.6 Prisma Client
+## 3.10 Architecture part Two
 
-1. client는 node_module내부에 위치함
+1. npm i graphql-tools를 통해 나눠진 파일에 있는 mutation, query, typeDef를 schema로 merging
+
+# 3.11 Dotenv
+
+1. Dotenv 설치 .env 파일 사용
+
+## 4.1 Create Account part One
+
+1. createAccount mutation 만들기
+
+## 4.2 Create Account part Two
+
+1. npm i bcrypt를 통한 Password Hashing
