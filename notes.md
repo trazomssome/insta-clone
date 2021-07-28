@@ -2,13 +2,13 @@
 
 ## User:
 
-- [] Create Account
-- [] See Profile
-- [] Login
-- [] Edit Profile
-- [] Follow User
-- [] Unfollow User
-- [] Change Avatar (Image Upload)
+- [x] Create Account
+- [x] See Profile
+- [x] Login
+- [ ] Edit Profile
+- [ ] Follow User
+- [ ] Unfollow User
+- [ ] Change Avatar (Image Upload)
 
 ## 3.1 Apollo Server
 
@@ -46,3 +46,12 @@
 ## 4.2 Create Account part Two
 
 1. npm i bcrypt를 통한 Password Hashing
+
+## 4.3 seeProfile
+
+1. try/catch 설명
+
+## 4.5 login part Tow and refactor
+
+1. jwt 설치
+2. 토큰은 누구나 볼 수 있기 때문에 비밀 정보를 담는 곳이 아니다
