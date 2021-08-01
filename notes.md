@@ -60,3 +60,19 @@
 
 1. prisma는 undefined 값을 보내면 업데이트 하지 않음
 2. es6의 ...문법
+
+## 4.8 authentication part one
+
+1. 토큰을 모든 곳에 넣는 원시적 방법.. 하지만 별로임
+
+## 4.9 authentication part two
+
+1. 토큰을 http header에 넣기.. 근데 apollo studio에서 넣은건데 나중에는 어떻게 유저한테 전달하지?
+2. http header에 들어있는 토큰을 apollo server의 context에 넣기
+3. context에 들어가 있는 정보는 모든 resolver에서 접근 가능하다
+
+## 4.10 authentication part Three
+
+1. context는 fuction이 될 수도 있다
+2. req를 파라미터로 받아서 req.headers.token으로 접근해서 유저의 token을 받아오기
+3.

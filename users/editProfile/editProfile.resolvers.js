@@ -8,12 +8,14 @@ export default {
       _,
       { firstName, lastName, username, email, password: newPassword }
     ) => {
+      const { id } = await jwt.verify(token, process.env.SECRET_KEY);
+
       let uglyPassword = null;
       if (newPassword) {
         uglyPassword = await bcrypt.hash(newPassword, 10);
       }
       const updatedUser = await client.user.update({
-        where: { id: 13 },
+        where: { id },
         data: {
           firstName,
           lastName,
